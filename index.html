@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Loop Visualization</title>
+</head>
+<body>
+    <div class="nav">
+        <img src="./logo.png" alt="" srcset="">
+        <span>Loop</span>
+    </div>
+    <div class="main">
+        <canvas id="myCanvas" width="550" height="550"></canvas>
+        <div class="tools">
+            <div id="loopIndicators">
+                <div class="i">
+                    <div class="indicator outter">
+                        Loop - i: <span id="iIndicator">0</span>
+                    </div>
+                    <div id="iLooperCircle" class="looper-circle"></div>
+                </div>
+                <div class="j">
+                    <div class="indicator inner">
+                        Loop - j: <span id="jIndicator">0</span>
+                    </div>
+                    <div id="jLooperCircle" class="looper-circle"></div>
+                </div>
+            </div>
+            <div id="controls">
+                <button id="playPauseBtn">Play</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
