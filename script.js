@@ -36,7 +36,7 @@ function drawGrid() {
                 ctx.fillRect(j * cellSize + 50, i * cellSize + 50, cellSize, cellSize);
                 ctx.strokeRect(j * cellSize + 50, i * cellSize + 50, cellSize, cellSize);
                 ctx.fillStyle = 'white';
-                ctx.font = '16px Arial';
+                ctx.font = 'bold 16px "Comic Sans MS"';
                 ctx.fillText(`${i},`, j * cellSize + 90, i * cellSize + 110);
                 ctx.fillText(`${j}`, j * cellSize + 105, i * cellSize + 110);
             }
@@ -54,14 +54,14 @@ function updateIndicators(i, j) {
 
 function drawArrows(i, j) {
     ctx.fillStyle = colors[j];
-    ctx.font = '12px Arial';
+    ctx.font = 'bold 12px "Comic Sans MS"';
     // Draw the arrows outside the grid
     ctx.fillText(`j = ${j}`, j * cellSize + 75 + cellSize / 2 - 5, 35); // Arrow for j
     ctx.font = '50px Arial';
     ctx.fillText(`↓`, j * cellSize + 50 + cellSize / 2 - 5, 35); // Arrow for j
     ctx.fillStyle = colors[i];
-    ctx.font = '12px Arial';
-    ctx.fillText(`i = ${i}`, 10, i * cellSize + 50 + cellSize / 2 -15);  // Arrow for i
+    ctx.font = 'bold 12px "Comic Sans MS"';
+    ctx.fillText(`i = ${i}`, 5, i * cellSize + 50 + cellSize / 2 -15);  // Arrow for i
     ctx.font = '50px Arial';
     ctx.fillText(`→`,0, i * cellSize + 50 + cellSize / 2 + 5);  // Arrow for i
 }
